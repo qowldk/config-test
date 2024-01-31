@@ -15,6 +15,8 @@ import config from './configs/config';
       isGlobal: true,
       envFilePath: `${process.cwd()}/envs/${process.env.NODE_ENV}.env`,
       load: [config],
+      cache: true,
+      expandVariables: true,
     }),
     WeatherModule,
   ],
